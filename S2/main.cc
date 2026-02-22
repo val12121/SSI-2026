@@ -6,7 +6,7 @@ std::string REST (std::string, std::string);
 int main() {
   
   //CIFRAR
-  std::string text = "ENCRIPTADO";
+  std::string text = "QUIERE TOTO DE LOCA";
   std::string key = "MISION";
 
   std::string key_ext;
