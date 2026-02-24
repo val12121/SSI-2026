@@ -2,12 +2,13 @@
 
 std::string SUM (std::string, std::string);
 std::string REST (std::string, std::string);
+std::string INVERT (std::string);
 
 int main() {
   
   //CIFRAR
-  std::string text = "QUIERE TOTO DE LOCA";
-  std::string key = "MISION";
+  std::string text = "HOLA";
+  std::string key = "HOY";
 
   std::string key_ext;
 
@@ -23,6 +24,8 @@ int main() {
   } else {
     key_ext = key;
   }
+
+  INVERT(key_ext);
 
   std::string word = SUM(text, key_ext);
   std::cout << word << std::endl;
@@ -47,5 +50,15 @@ std::string REST (std::string A, std::string B) {
   for (int i = 0; i < A.size(); i++) {
     result.push_back(((A[i] - 'A') - (B[i] - 'A') + 26 ) % 26 + 'A'); //Le sumo +26 para evitar los valores negativos
   }
+  return result;
+}
+
+std::string INVERT (std::string key) {
+  std::string result;
+  
+  for (int i = 0; i <= key.size(); i++) {
+    result.push_back(key[key.size() - i]);
+  }
+  std::cout << result << std::endl;
   return result;
 }
