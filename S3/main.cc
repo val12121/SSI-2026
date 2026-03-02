@@ -12,7 +12,7 @@ void chacha_init(uint32_t state[16],
   // Constantes
   state[0] = 0x61707865;
   state[1] = 0x3320646e;
-  state[2] = 0x79622d32;
+  state[2] = 0x79622d32; 
   state[3] = 0x6b206574;
 
   // Clave
@@ -55,9 +55,9 @@ void quarter_round(uint32_t &a,
                    uint32_t &c,
                    uint32_t &d)
 {
-  a += b; //SUMA
-  d ^= a; //XOR
-  d = rotl(d, 16); //ROTACIÓN CÍCLICA izq
+  a += b;          // SUMA
+  d ^= a;          // XOR
+  d = rotl(d, 16); // ROTACIÓN CÍCLICA izq
 
   c += d;
   b ^= c;
