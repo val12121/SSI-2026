@@ -29,6 +29,11 @@ class GeneradorCA
 
   static void Main()
   {
+    Console.Write("Ingresa el número de iteraciones: ");
+    string input = Console.ReadLine();
+    int iter;
+    int.TryParse(input, out iter);
+
     int[] g1 = new int[10];
     int[] g2 = new int[10];
 
@@ -38,7 +43,7 @@ class GeneradorCA
     Console.WriteLine("Iteración | g1          | r | g2          | r | bitCA");
     Console.WriteLine("------------------------------------------------------");
 
-    for (int iter = 1; iter <= 14; iter++) // 10 iteraciones de ejemplo
+    for (int i = 0; i < iter; i++) // 10 iteraciones de ejemplo
     {
       int newG1 = SumG1(g1);
       int newG2 = SumG2(g2);
@@ -49,7 +54,7 @@ class GeneradorCA
       // bitCA típico: g1 XOR (g2[1] ^ g2[5])
       int bitCA = g1[0] ^ (g2[1] ^ g2[5]);
 
-      Console.WriteLine($"{iter,9} | {string.Join("", g1)} | {newG1} | {string.Join("", g2)} | {newG2} | {bitCA}");
+      Console.WriteLine($"{i,9} | {string.Join("", g1)} | {newG1} | {string.Join("", g2)} | {newG2} | {bitCA}");
     }
   }
 }
