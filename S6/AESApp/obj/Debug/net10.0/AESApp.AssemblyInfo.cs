@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AESApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35439659fd4ba4f0a18a533e0526e1884d1c3632")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e38766effc60e0ee8c98b5e17764b5aff4b343c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AESApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AESApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
