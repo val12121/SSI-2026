@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/val/Documentos/Code/SSI-2026/S6/AESApp/AESApp.csproj": {}
+    "/home/val/Documentos/Code/SSI-2026/S7/programa6/programa6.csproj": {}
   },
   "projects": {
-    "/home/val/Documentos/Code/SSI-2026/S6/AESApp/AESApp.csproj": {
+    "/home/val/Documentos/Code/SSI-2026/S7/programa6/programa6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/val/Documentos/Code/SSI-2026/S6/AESApp/AESApp.csproj",
-        "projectName": "AESApp",
-        "projectPath": "/home/val/Documentos/Code/SSI-2026/S6/AESApp/AESApp.csproj",
+        "projectUniqueName": "/home/val/Documentos/Code/SSI-2026/S7/programa6/programa6.csproj",
+        "projectName": "programa6",
+        "projectPath": "/home/val/Documentos/Code/SSI-2026/S7/programa6/programa6.csproj",
         "packagesPath": "/home/val/.nuget/packages/",
-        "outputPath": "/home/val/Documentos/Code/SSI-2026/S6/AESApp/obj/",
+        "outputPath": "/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/val/.nuget/NuGet/NuGet.Config"

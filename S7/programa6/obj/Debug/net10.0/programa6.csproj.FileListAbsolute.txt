@@ -1,0 +1,15 @@
+/home/val/Documentos/Code/SSI-2026/S7/programa6/bin/Debug/net10.0/programa6
+/home/val/Documentos/Code/SSI-2026/S7/programa6/bin/Debug/net10.0/programa6.deps.json
+/home/val/Documentos/Code/SSI-2026/S7/programa6/bin/Debug/net10.0/programa6.runtimeconfig.json
+/home/val/Documentos/Code/SSI-2026/S7/programa6/bin/Debug/net10.0/programa6.dll
+/home/val/Documentos/Code/SSI-2026/S7/programa6/bin/Debug/net10.0/programa6.pdb
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/programa6.GeneratedMSBuildEditorConfig.editorconfig
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/programa6.AssemblyInfoInputs.cache
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/programa6.AssemblyInfo.cs
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/programa6.csproj.CoreCompileInputs.cache
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/programa6.sourcelink.json
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/programa6.dll
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/refint/programa6.dll
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/programa6.pdb
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/programa6.genruntimeconfig.cache
+/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/Debug/net10.0/ref/programa6.dll

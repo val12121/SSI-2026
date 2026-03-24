@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/val/Documentos/Code/SSI-2026/S6/S6.csproj",
-      "projectName": "S6",
-      "projectPath": "/home/val/Documentos/Code/SSI-2026/S6/S6.csproj",
+      "projectUniqueName": "/home/val/Documentos/Code/SSI-2026/S7/programa6/programa6.csproj",
+      "projectName": "programa6",
+      "projectPath": "/home/val/Documentos/Code/SSI-2026/S7/programa6/programa6.csproj",
       "packagesPath": "/home/val/.nuget/packages/",
-      "outputPath": "/home/val/Documentos/Code/SSI-2026/S6/obj/",
+      "outputPath": "/home/val/Documentos/Code/SSI-2026/S7/programa6/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/val/.nuget/NuGet/NuGet.Config"
