@@ -3,6 +3,10 @@ using System;
 
 class CBC
 {
+
+  static private byte[] original_ = new byte[16];
+  static private byte[] key_ = new byte[16];
+  static private byte[] bloque_ = new byte[16];
   public static byte[] XorBytes (byte[] a, byte[] b)
   {
     byte[] resultado = new byte[16];
@@ -13,19 +17,29 @@ class CBC
     return resultado;
   }
 
+  public static byte[] CBC_method (byte [] original, byte [] key, byte [] bloque)
+  {
+    byte[] aux;
+    aux = XorBytes(original_, bloque_);
+    byte[] state = AESProgram.Aes(aux, key_);
+    Console.WriteLine($"{BitConverter.ToString(state).Replace("-","")}");
+    return state;
+  }
+
   public static void Main()
   {
     string original_S = "00000000000000000000000000000000";
     string key_S = "000102030405060708090a0b0c0d0e0f";
     string bloque_S = "00112233445566778899AABBCCDDEEFF";
+    string bloque_S2 = "00000000000000000000000000000000";
 
-    byte[] original = AESProgram.HexStringToByteArray(original_S);
-    byte[] key = AESProgram.HexStringToByteArray(key_S);
-    byte[] bloque = AESProgram.HexStringToByteArray(bloque_S);
-
-    byte[] aux = XorBytes(original, key);
-
-    byte[] state = AESProgram.Aes(bloque, aux);
-    Console.WriteLine($"{BitConverter.ToString(state).Replace("-","")}");
+    original_ = AESProgram.HexStringToByteArray(original_S);
+    key_ = AESProgram.HexStringToByteArray(key_S);
+    bloque_ = AESProgram.HexStringToByteArray(bloque_S);
+    
+    original_ = CBC_method(original_, key_, bloque_);
+    bloque_ = AESProgram.HexStringToByteArray(bloque_S2);
+    byte[] resultado = CBC_method(original_, key_, bloque_);
   }
+  
 }
