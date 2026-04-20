@@ -15,21 +15,23 @@ for i, qc in enumerate(message):
   if alice_bases[i] == 1:
     qc.h(0)
 
-# Eva intercepta los cúbits en el canal antes de que lleguen a Bob
+entrada = input("Introduce un número p: ")
+probabilidad = float(entrada)
+print({probabilidad})
+
 eva_bases = np.random.randint(2, size=n)
+classical_bit_index_for_eva_measurement = 1
 
 for i, qc in enumerate(message):
-  # Eva elige una base al azar para medir
-  if eva_bases[i] == 1:
-    qc.h(0)
-    
-  qc.measure(0, 0)
-    
-    # if (eva.base == H)
-  if eva_bases[i] == 1:
-    qc.h(0)
+  numero = np.random.random()
+  if numero < probabilidad:
+    if eva_bases[i] == 1:
+      qc.h(0)
+      qc.measure(0, 0)
+    if eva_bases[i] == 1:
+      qc.h(0)
 
-# Recepción de Bob
+# Bob
 bob_bases = np.random.randint(2, size=n)
 
 for i, qc in enumerate(message):
@@ -67,7 +69,7 @@ print(f"--- Protocolo BB84 con Atacante (Eva) ---")
 print(f"Longitud de la clave filtrada: {len(alice_key)}")
 print(f"QBER (Tasa de error detectada): {qber:.4f}")
 
-if qber > 0.1: # Normalmente el umbral es 11% o 25% dependiendo del análisis
+if qber > 0.1: 
   print("¡ALERTA! Tasa de error elevada. Se ha detectado un intruso (Eva) en el canal.")
 else:
   print("Canal seguro.")
