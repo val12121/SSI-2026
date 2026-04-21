@@ -89,7 +89,7 @@ q_ = Primos(q)
 p_.Lehman(True)
 q_.Lehman(True)
 
-fun_euler = (p - 1) * (q - 1)
+fun_euler = math.lcm((p - 1), (q - 1))
 mcd, e_raw, y = p_.Euclides(d, fun_euler)
 e = e_raw % fun_euler
 n = p * q 
